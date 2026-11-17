@@ -1,0 +1,18 @@
+title: "Av. İsmail Çavuş – Hukuk Notları"
+description: "Ceza hukuku ve iş hukuku üzerine güncel, kanun maddesi ve Yargıtay kararlarıyla desteklenen bilgilendirme yazıları. ismailcavus.com.tr"
+url: "https://avukatismailcavus.github.io"
+lang: tr
+timezone: Europe/Istanbul
+author:
+  name: "Av. İsmail Çavuş"
+theme: minima
+permalink: /:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+minima:
+  social_links:
+    youtube: avismailcavus
+    instagram: avismailcavus
+    linkedin: ismail-cavus
