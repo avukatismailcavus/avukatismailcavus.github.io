@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="kap yazi">
+  <header class="yazi-bas">
+    <a class="geri" href="{{ '/' | relative_url }}">← Bütün yazılar</a>
+    <h1>{{ page.title }}</h1>
+    <p class="yazi-bilgi">
+      <span>Av. İsmail Çavuş</span> ·
+      <span>Son güncelleme: <time datetime="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}">{% include tarih.html tarih=page.date %}</time></span>
+    </p>
+    {%- if page.description -%}<p class="ozet">{{ page.description }}</p>{%- endif -%}
+  </header>
+
+  <div class="icerik">
+    {{ content }}
+  </div>
+
+  <aside class="yazar">
+    <p class="yazar-ad">Av. İsmail Çavuş</p>
+    <p>Ankara 2 Nolu Barosu (Sicil No: 3289). Ceza hukuku ve iş hukuku üzerine kaynaklı bilgilendirme yazıları.</p>
+    <p><a href="https://www.ismailcavus.com.tr">ismailcavus.com.tr</a></p>
+  </aside>
+</article>
