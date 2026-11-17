@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<section class="giris">
+  <div class="kap">
+    <p class="ust-etiket">Ankara 2 Nolu Barosu · Sicil No: 3289</p>
+    <h1>Hukuk Notları</h1>
+    <p class="giris-metin">{{ site.description }}</p>
+    <p class="giris-alt">Yazar: <strong>Av. İsmail Çavuş</strong> · Yazıların tamamı <a href="https://www.ismailcavus.com.tr">ismailcavus.com.tr</a> adresinde.</p>
+  </div>
+</section>
+
+<section class="kap liste" id="yazilar">
+  <h2 class="bolum">Son yazılar</h2>
+  {%- if site.posts.size > 0 -%}
+  <div class="kartlar">
+    {%- for post in site.posts -%}
+    <a class="kart" href="{{ post.url | relative_url }}">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{% include tarih.html tarih=post.date %}</time>
+      <h3>{{ post.title }}</h3>
+      {%- if post.description -%}<p>{{ post.description }}</p>{%- endif -%}
+      <span class="devam">Yazıyı oku →</span>
+    </a>
+    {%- endfor -%}
+  </div>
+  {%- else -%}
+  <p class="bos">İlk yazı yakında burada olacak. Bu arada bütün yazılar için <a href="https://www.ismailcavus.com.tr">ismailcavus.com.tr</a>.</p>
+  {%- endif -%}
+</section>
+
+{{ content }}
