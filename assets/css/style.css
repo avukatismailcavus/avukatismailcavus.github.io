@@ -33,7 +33,11 @@ body {
   color: var(--metin);
   font: 400 17px/1.7 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+main { flex: 1; }
 a { color: var(--altin); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 h1, h2, h3 { color: var(--murekkep); line-height: 1.25; }
